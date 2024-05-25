@@ -63,6 +63,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '685340665592',
     projectId: 'auth-project-5d138',
     storageBucket: 'auth-project-5d138.appspot.com',
-    iosBundleId: 'com.example.authProject',
+    iosBundleId: 'com.example.auth',
   );
 }

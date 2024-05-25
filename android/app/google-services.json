@@ -28,7 +28,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:685340665592:android:e09ab1e949fbf4b2d4bd0d",
         "android_client_info": {
-          "package_name": "com.example.auth_project"
+          "package_name": "com.example.auth"
         }
       },
       "oauth_client": [],
