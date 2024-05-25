@@ -1,6 +1,6 @@
 import 'package:auth_project/pages/login/components/square_tile.dart';
-import 'package:auth_project/pages/login/login_controller.dart';
 import 'package:auth_project/pages/register/register_controller.dart';
+import 'package:auth_project/services/auth_service.dart';
 import 'package:auth_project/shared/my_button.dart';
 import 'package:auth_project/shared/my_text_field.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +12,7 @@ class RegisterContent extends StatelessWidget {
     required this.onLogin,
   });
 
+  AuthService auth = AuthService();
   RegisterController controller = RegisterController();
 
   @override
@@ -103,13 +104,14 @@ class RegisterContent extends StatelessWidget {
           ),
           // google and apple signin button
 
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SquareTile(
+                onTap: auth.signWithGoogle(),
                 imagePath: 'lib/assets/images/google.webp',
               ),
-              SizedBox(
+              const SizedBox(
                 width: 24,
               ),
               SquareTile(
