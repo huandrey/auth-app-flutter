@@ -10,8 +10,8 @@ class SquareTile extends StatelessWidget {
     super.key,
     required this.imagePath,
     this.onTap,
-    this.width = 62,
-    this.height = 62,
+    this.width = 52,
+    this.height = 52,
   });
 
   @override
@@ -19,7 +19,7 @@ class SquareTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),
           color: Colors.grey.shade200,
