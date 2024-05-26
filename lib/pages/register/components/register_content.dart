@@ -108,7 +108,7 @@ class RegisterContent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SquareTile(
-                onTap: auth.signWithGoogle(),
+                onTap: () => auth.signWithGoogle(),
                 imagePath: 'lib/assets/images/google.webp',
               ),
               const SizedBox(
